@@ -59,3 +59,8 @@ section#videos {
   height: 100%;
   width: 100%;
 }
+
+div.carousel {
+  max-width: 80%;
+  max-height: 80%;
+}
