@@ -1,5 +1,3 @@
-<!--Bootstrap was used to create this site!-->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,17 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="custom.css"/>
+    <link rel="stylesheet" href="custom.css" />
     <title>Climate Change</title>
   </head>
   <body>
-    <!--This Navbar is from the Bootstrap library-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar  navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Climate Change</a>
         <button
@@ -36,13 +33,18 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#articles">Read</a>
+              <a class="nav-link active" aria-current="page" href="#articles"
+                >Read</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#images">View</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore">Explain</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#videos">Watch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#act">View</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#act">Act</a>
@@ -62,18 +64,18 @@
         </div>
       </div>
     </nav>
-    <main role="main">
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1>Inform Yourself</h1>
-          <p class="lead text-muted">
-            A collection of articles to help you be aware of the crisis we are facing. 
-          </p>
-          <p></p>
-        </div>
-      </section>
-      <!--This part of the page was originally a boosstrap album, but has been edited to create a collection of articles-->
-      <section id="articles">
+    <!--Bootstrap class that is used as the central element in the webpage-->
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>Inform Yourself</h1>
+        <p class="lead text-muted">
+          The purpose of this site is to provide you with a collection of resources, to inform you on the 
+          crisis we are faced with. It is supposed to illustrate the urgency we need to act with. 
+        </p>
+        <p></p>
+      </div>
+    </section>
+    <section id="articles">
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
@@ -197,69 +199,97 @@
                 </div>
               </div>
             </div>
-
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-     <!-- This part of the page is an image carousel from Bootstrap-->
-     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/img4.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/img5.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/img6.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--This part of the page utlises the Bootstrap classes found at https://startbootstrap.com/template/scrolling-nav-->
-      <section id="act">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h2>So, what can you do?</h2>
-                    <ul>
-                        <li>Absolutely obsess over every single drop of water. </li>
-                        <li>Use renewable energy sources wherever possible. </li>
-                        <li>Recycle all recycleable waste. </li>
-                        <li>Invest in sustainable products. </li>
-                    </ul>
-                    <p>Find 101 more ways that YOU can combat climate change at <a class = "link" href = "https://archive.curbed.com/2017/6/7/15749900/how-to-stop-climate-change-actions">archive.curbed.com</a></p>
-                </div>
-            </div>
-        </div>
     </section>
-    </main>
+    <!--This part of the page is a Bootstrap image carousel-->
+    <section id="images">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img4.jpg" class="d-block w-100" alt="...">
+            <p>Photo by <a class="link" href="https://unsplash.com/@worldsbetweenlines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Hendry</a> on <a class = "link"href="https://unsplash.com/s/photos/patrick-hendry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+          </div>
+          <div class="carousel-item">
+            <img src="img/img5.jpg" class="d-block w-100" alt="...">
+            <p>Photo by <a class="link" href="https://unsplash.com/@worldsbetweenlines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Hendry</a> on <a class = "link"href="https://unsplash.com/s/photos/patrick-hendry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img7.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="explore">
+      <div class="container px-4">
+          <div class="row gx-4 justify-content-center">
+              <div class="col-lg-8">
+                  <h2>Climate Change - What is actually happening?</h2>
+                  <p> 
+                    Some of the effects of climate change that are noticeable within our lives today include: glaciers melting at a faster rate than ever before, 
+                    tropical storms have become more severe, droughts are becoming longer and more extreme and that is just to name a few. So, what is causing this? 
+                    Many natural and human-induced factors contribute to climate change. Greenhouse gasses form a thick cloud around the earth which absorb and reflect radiation. This means that the radiation is not able to 
+                    escape from the earth's atmosphere resulting in an increase in heat from the radiation and therefore, progressively warmer temperatures. Increases in human activity which release these greenhouse gasses is why
+                    this effect is becoming more severe. 
+                  </p>
+                  <p>This paragraph is an adaptation of articles found on <a class="link" href="https://www.usgs.gov/">usgs.gov</a></p>
+                  <p>For more information regarding the temperatue of the earth, my chosen dataset can be found at <a class="link" href ="https://datahub.io/core/global-temp">datahub.io</a></p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--This section embeds a YouTube video into the webpage-->
+    <section id="videos">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s3tlcKKglaE" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!--This part of the page utlises the Bootstrap classes found at https://startbootstrap.com/template/scrolling-nav-->
+    <section id="act">
+      <div class="container px-4">
+          <div class="row gx-4 justify-content-center">
+              <div class="col-lg-8">
+                  <h2>So, what can you do?</h2>
+                  <ul>
+                      <li>Absolutely obsess over every single drop of water. </li>
+                      <li>Use renewable energy sources wherever possible. </li>
+                      <li>Recycle all recycleable waste. </li>
+                      <li>Invest in sustainable products. </li>
+                  </ul>
+                  <p>Find 101 more ways that YOU can combat climate change at <a class = "link" href = "https://archive.curbed.com/2017/6/7/15749900/how-to-stop-climate-change-actions">archive.curbed.com</a></p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--Bootstrap Footer-->
+    <footer class="bg-dark text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p class="footer">Site created by Matthew Schaefer using <a class="link" href="https://getbootstrap.com/docs/4.1/examples/">Bootstrap</a></p>
+      </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </body>
-</html> 
+</html>
